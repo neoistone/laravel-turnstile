@@ -1,8 +1,8 @@
 <?php
 
-namespace Coderflex\LaravelTurnstile\Tests;
+namespace Neoistone\LaravelTurnstile\Tests;
 
-use Coderflex\LaravelTurnstile\LaravelTurnstileServiceProvider;
+use Neoistone\LaravelTurnstile\LaravelTurnstileServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
