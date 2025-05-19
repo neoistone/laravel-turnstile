@@ -1,9 +1,9 @@
 <?php
 
-namespace Coderflex\LaravelTurnstile;
+namespace Neoistone\LaravelTurnstile;
 
-use Coderflex\LaravelTurnstile\Exceptions\SecretKeyNotFoundException;
-use Coderflex\LaravelTurnstile\Exceptions\UnkownErrorOccuredException;
+use Neoistone\LaravelTurnstile\Exceptions\SecretKeyNotFoundException;
+use Neoistone\LaravelTurnstile\Exceptions\UnkownErrorOccuredException;
 use Illuminate\Support\Facades\Http;
 
 class LaravelTurnstile
