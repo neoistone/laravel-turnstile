@@ -3,8 +3,8 @@
 namespace Neoistone\LaravelTurnstile\Rules;
 
 use Closure;
-use Neoistone\LaravelTurnstile\Facades\LaravelTurnstile;
 use Illuminate\Contracts\Validation\ValidationRule;
+use Neoistone\LaravelTurnstile\Facades\LaravelTurnstile;
 
 class TurnstileCheck implements ValidationRule
 {
