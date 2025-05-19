@@ -1,6 +1,6 @@
 <?php
 
-use Coderflex\LaravelTurnstile\Rules\TurnstileCheck;
+use Neoistone\LaravelTurnstile\Rules\TurnstileCheck;
 use Illuminate\Support\Facades\Config;
 
 it('returns success message', function () {
