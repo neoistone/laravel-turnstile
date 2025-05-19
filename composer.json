@@ -1,6 +1,7 @@
 {
     "name": "neoistone/laravel-turnstile",
     "description": "A package to help you implement the Cloudflare turnstile \"CAPTCHA Alternative\"",
+    "version": 1.0,
     "keywords": [
         "Neoistone",
         "laravel",
