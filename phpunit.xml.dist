@@ -16,7 +16,7 @@
     backupStaticProperties="false"
 >
     <testsuites>
-        <testsuite name="Coderflex Test Suite">
+        <testsuite name="Neoistone Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>
