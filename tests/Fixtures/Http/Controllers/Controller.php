@@ -1,6 +1,6 @@
 <?php
 
-namespace Coderflex\LaravelTurnstile\Tests\Fixtures\Http\Controllers;
+namespace Neoistone\LaravelTurnstile\Tests\Fixtures\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
