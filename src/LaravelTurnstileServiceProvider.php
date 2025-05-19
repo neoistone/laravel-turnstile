@@ -1,8 +1,8 @@
 <?php
 
-namespace Coderflex\LaravelTurnstile;
+namespace Neoistone\LaravelTurnstile;
 
-use Coderflex\LaravelTurnstile\Components\TurnstileWidget;
+use Neoistone\LaravelTurnstile\Components\TurnstileWidget;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
