@@ -1,6 +1,6 @@
 <?php
 
-namespace Coderflex\LaravelTurnstile\Components;
+namespace Neoistone\LaravelTurnstile\Components;
 
 use Illuminate\View\Component;
 
