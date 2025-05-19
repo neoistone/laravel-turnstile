@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-turnstile` will be documented in this file.
 
+## 1 - 2025-05-19
+
+first Releases
+
 ## v1.0.3 - 2023-05-30
 
 ### What's Changed
