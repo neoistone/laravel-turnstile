@@ -1,9 +1,9 @@
 <?php
 
-namespace Coderflex\LaravelTurnstile\Rules;
+namespace Neoistone\LaravelTurnstile\Rules;
 
 use Closure;
-use Coderflex\LaravelTurnstile\Facades\LaravelTurnstile;
+use Neoistone\LaravelTurnstile\Facades\LaravelTurnstile;
 use Illuminate\Contracts\Validation\ValidationRule;
 
 class TurnstileCheck implements ValidationRule
