@@ -1,6 +1,6 @@
 <?php
 
-namespace Coderflex\LaravelTurnstile\Tests\Fixtures\Http\Controllers;
+namespace Neoistone\LaravelTurnstile\Tests\Fixtures\Http\Controllers;
 
 class TurnstileController extends Controller
 {
