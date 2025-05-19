@@ -1,7 +1,7 @@
 <?php
 
-use Neoistone\LaravelTurnstile\Rules\TurnstileCheck;
 use Illuminate\Support\Facades\Config;
+use Neoistone\LaravelTurnstile\Rules\TurnstileCheck;
 
 it('returns success message', function () {
     setTurnstileRoutes(true);
