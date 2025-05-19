@@ -1,19 +1,19 @@
 {
-    "name": "coderflex/laravel-turnstile",
+    "name": "neoistone/laravel-turnstile",
     "description": "A package to help you implement the Cloudflare turnstile \"CAPTCHA Alternative\"",
     "keywords": [
-        "Coderflex",
+        "Neoistone",
         "laravel",
         "laravel-turnstile",
         "cloudflare",
         "turnstile"
     ],
-    "homepage": "https://github.com/coderflexx/laravel-turnstile",
+    "homepage": "https://github.com/neoistone/laravel-turnstile",
     "license": "MIT",
     "authors": [
         {
-            "name": "ousid",
-            "email": "oussama@coderflex.com",
+            "name": "manikantasripadi",
+            "email": "manikantasripadi@neoistone.com",
             "role": "Developer"
         }
     ],
@@ -36,13 +36,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Coderflex\\LaravelTurnstile\\": "src/",
-            "Coderflex\\LaravelTurnstile\\Database\\Factories\\": "database/factories/"
+            "Neoistone\\LaravelTurnstile\\": "src/",
+            "Neoistone\\LaravelTurnstile\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Coderflex\\LaravelTurnstile\\Tests\\": "tests/"
+            "Neoistone\\LaravelTurnstile\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -62,10 +62,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Coderflex\\LaravelTurnstile\\LaravelTurnstileServiceProvider"
+                "Neoistone\\LaravelTurnstile\\LaravelTurnstileServiceProvider"
             ],
             "aliases": {
-                "LaravelTurnstile": "Coderflex\\LaravelTurnstile\\Facades\\LaravelTurnstile"
+                "LaravelTurnstile": "Neoistone\\LaravelTurnstile\\Facades\\LaravelTurnstile"
             }
         }
     },
