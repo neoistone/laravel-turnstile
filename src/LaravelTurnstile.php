@@ -22,7 +22,6 @@ class LaravelTurnstile
 
         $response = Http::asJson()
             ->timeout(30)
-            ->connectTimeout(10)
             ->throw(
                 fn () => new UnkownErrorOccuredException(
                     'An unkown error occured, please refresh the page and try again.'
