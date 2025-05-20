@@ -5,9 +5,18 @@ namespace Neoistone\LaravelTurnstile;
 use Neoistone\LaravelTurnstile\Components\TurnstileWidget;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Illuminate\Support\Facades\Validator;
+use Neoistone\LaravelTurnstile\Rules\TurnstileCheck;
+
 
 class LaravelTurnstileServiceProvider extends PackageServiceProvider
 {
+    public function boot()
+    {
+        Validator::extend('cf-valid', function ($attribute, $value, $parameters, $validator) {
+            return (new TurnstileCheck)->passes($attribute, $value);
+        }, __(config('turnstile.error_messages.turnstile_check_message', 'Turnstile validation failed.')));
+    }
     public function configurePackage(Package $package): void
     {
         /*
