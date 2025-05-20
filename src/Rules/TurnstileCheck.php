@@ -2,21 +2,20 @@
 
 namespace Neoistone\LaravelTurnstile\Rules;
 
-use Closure;
-use Illuminate\Contracts\Validation\ValidationRule;
+use Illuminate\Contracts\Validation\Rule;
 use Neoistone\LaravelTurnstile\Facades\LaravelTurnstile;
 
-class TurnstileCheck implements ValidationRule
+class TurnstileCheck implements Rule
 {
-    /**
-     * Run the validation rule.
-     */
-    public function validate(string $attribute, mixed $value, Closure $fail): void
+    public function passes($attribute, $value): bool
     {
         $response = LaravelTurnstile::validate($value);
 
-        if (! $response['success']) {
-            $fail(__(config('turnstile.error_messages.turnstile_check_message')));
-        }
+        return $response['success'] ?? false;
+    }
+
+    public function message(): string
+    {
+        return __(config('turnstile.error_messages.turnstile_check_message'));
     }
 }
