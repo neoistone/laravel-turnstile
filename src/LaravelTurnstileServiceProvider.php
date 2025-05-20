@@ -2,12 +2,11 @@
 
 namespace Neoistone\LaravelTurnstile;
 
+use Illuminate\Support\Facades\Validator;
 use Neoistone\LaravelTurnstile\Components\TurnstileWidget;
+use Neoistone\LaravelTurnstile\Rules\TurnstileCheck;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Illuminate\Support\Facades\Validator;
-use Neoistone\LaravelTurnstile\Rules\TurnstileCheck;
-
 
 class LaravelTurnstileServiceProvider extends PackageServiceProvider
 {
@@ -17,6 +16,7 @@ class LaravelTurnstileServiceProvider extends PackageServiceProvider
             return (new TurnstileCheck)->passes($attribute, $value);
         }, __(config('turnstile.error_messages.turnstile_check_message', 'Turnstile validation failed.')));
     }
+
     public function configurePackage(Package $package): void
     {
         /*
